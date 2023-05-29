@@ -81,7 +81,6 @@ static const Rule rules[] = {
   * WM_NAME(STRING) = title
   */
   /* class                instance       title        tags mask   isfloating  isterminal  noswallow  monitor */
-  { "Emacs",                NULL,         NULL,             0,        0,          0,         -1,        -1 },
   { "firefox",              NULL,         NULL,             0,        0,          0,         -1,        -1 },
   { "qutebrowser",          NULL,         NULL,             0,        0,          0,         -1,        -1 },
   { "Steam",                NULL,         NULL,             0,        0,          0,         -1,        -1 },
