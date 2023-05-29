@@ -81,13 +81,11 @@ static const Rule rules[] = {
   * WM_NAME(STRING) = title
   */
   /* class                instance       title        tags mask   isfloating  isterminal  noswallow  monitor */
-  { "Emacs",                NULL,         NULL,          1<<0,        0,          0,         -1,        -1 },
-  { "firefox",              NULL,         NULL,          1<<1,        0,          0,         -1,        -1 },
-  { "qutebrowser",          NULL,         NULL,          1<<1,        0,          0,         -1,        -1 },
-  { "Steam",                NULL,         NULL,          1<<2,        0,          0,         -1,        -1 },
-  { "TelegramDesktop",      NULL,         NULL,          1<<3,        0,          0,         -1,        -1 },
+  { "Emacs",                NULL,         NULL,             0,        0,          0,         -1,        -1 },
+  { "firefox",              NULL,         NULL,             0,        0,          0,         -1,        -1 },
+  { "qutebrowser",          NULL,         NULL,             0,        0,          0,         -1,        -1 },
+  { "Steam",                NULL,         NULL,             0,        0,          0,         -1,        -1 },
   { "St",                   NULL,         NULL,             0,        0,          1,          0,        -1 },
-  { "Qalculate-gtk",        NULL,         NULL,             0,        1,          0,          1,        -1 },
   { NULL,               "spterm",         NULL,      SPTAG(0),        1,          1,          1,        -1 },
   { NULL,              "spfiles",         NULL,      SPTAG(1),        1,          1,          1,        -1 },
   { NULL,              "spmusic",         NULL,      SPTAG(2),        1,          1,          1,        -1 },
@@ -145,11 +143,9 @@ static const char *screenshot[] =   { "screenshot", NULL };
 static const char *fullshot[]   =   { "flameshot", "full", NULL };
 static const char *browser[]    =   { "firefox", NULL };
 static const char *slock[]      =   { "slock", NULL };
-static const char *telegram[]   =   { "telegram-desktop", "-l", NULL };
 static const char *wall[]       =   { "wg", NULL };
 static const char *emoji[]      =   { "emoji", NULL };
 static const char *clip[]       =   { "clipmenu", NULL };
-static const char *emacs[]      =   { "emacs", NULL };
 static const char *dfiles[]     =   { "dfiles", NULL };
 static const char *dots[]       =   { "dots", NULL };
 static const char *inclight[]   =   { "xbacklight", "-inc", "10", NULL };
@@ -192,8 +188,6 @@ static const Key keys[] = {
   { 0,                            XK_Print,      spawn,             {.v = screenshot } },
   { MODKEY,                       XK_Print,      spawn,             {.v = fullshot } },
   { MODKEY,                       XK_F2,         spawn,             {.v = browser } },
-  { MODKEY,                       XK_F3,         spawn,             {.v = telegram } },
-  { MODKEY,                       XK_F5,         spawn,             {.v = emacs } },
   { MODKEY,                       XK_F11,        spawn,             {.v = slock } },
   { 0,                            0x1008ff13,    spawn,             SHCMD("pulsemixer --change +5; kill -41 $(pidof dwmblocks)") },
   { 0,                            0x1008ff11,    spawn,             SHCMD("pulsemixer --change -5; kill -41 $(pidof dwmblocks)") },
