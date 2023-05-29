@@ -2,7 +2,7 @@
 export ZSH="$HOME/.config/.oh-my-zsh"
 
 # Set zsh theme
-ZSH_THEME="lambda"
+ZSH_THEME="minimal"
 
 # Set the auto update mode and frequency for Oh-My-Zsh
 zstyle ':omz:update' mode auto
@@ -73,3 +73,6 @@ alias ytb-best="yt-dlp -f bestvideo+bestaudio "
 
 # Define a function to upload files
 upload() { curl -F"file=@$1" https://envs.sh ; }
+
+# terminal decoration
+neofetch
