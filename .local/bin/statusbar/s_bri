@@ -1,2 +1,0 @@
-bri=`xbacklight -get`
-echo -e " $bri%"

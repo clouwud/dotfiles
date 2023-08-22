@@ -1,7 +1,0 @@
-dte="$(date +"%a %d/%m - %H:%M")"
-echo -e " $dte"
-
-case $BUTTON in
-	1) notify-send "$(cal)" ;;
-  6) st -e nvim "$0" ;;
-esac

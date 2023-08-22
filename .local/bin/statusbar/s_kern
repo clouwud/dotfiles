@@ -1,2 +1,0 @@
-kern=`uname -r`
-echo " $kern"
