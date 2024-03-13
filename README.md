@@ -5,3 +5,4 @@
 
 ``` git clone https://github.com/clouwud/dotfiles ```
 
+![Image Alt text](/rice/dwm_complete.png)
